@@ -1,0 +1,9 @@
+{
+  "name": "vendorlift-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-01",
+  "d1_databases": [
+    { "binding": "DB", "database_name": "vendorlift", "database_id": "local-placeholder", "migrations_dir": "drizzle" }
+  ],
+  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "vendorlift-media" }]
+}
