@@ -7,7 +7,7 @@ import Storefront from './pages/Storefront'
 import Checkout from './pages/Checkout'
 
 const rootRoute = createRootRoute({ component: () => <Outlet /> })
-const r = (path: string, component: () => React.JSX.Element) =>
+const r = <TPath extends string>(path: TPath, component: () => React.JSX.Element) =>
   createRoute({ getParentRoute: () => rootRoute, path, component })
 
 const routeTree = rootRoute.addChildren([
